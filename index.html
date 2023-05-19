@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Ultra milk</title>
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a class="gambar" href="#"><img src="./images/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+       </header>
+       <div class="content">
+        <div class="texBox">
+            <h2>That`s what<br><span>I like</span></h2>
+            <p>Indonesia's leading producer of aseptic dairy products, beverages and healthy drink products with UHT (Ultra High Temperature) Technology and aseptic packaging</p>
+            <a href="#">View all product</a>
+        </div>
+        <div class="imgBox">
+            <img src="./images/coklat.png" class="susu">
+        </div>
+       </div>
+      <div class="bawah">
+        <ul class="thumb">
+           <li class="satu"><img src="./images/cream.png" onclick="imgSlider ('images/cream.png')"></li>
+           <li><img src="./images/stroberi.png" onclick="imgSlider ('images/stroberi.png')" ></li>
+           <li><img src="./images/taro.png" onclick="imgSlider ('images/taro.png')" ></li>
+          </ul>
+          <ul class="sosialMedia">
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+
+          </ul>
+       </div>
+      </div>
+    </section>
+       <script type="text/javascript">
+        function imgSlider (anything) {
+            document.querySelector ('.susu').src = anything;
+        }
+        function changeBgColor(color) {
+            const sec = document.querySelector('.sec')
+            sec.style.background = color;
+        }
+
+       </script>
+
+</body>
+</html>
